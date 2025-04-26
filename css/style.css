@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  max-width: 135rem;
+  margin-block: 9rem 7rem;
+  margin-inline: clamp(1rem, 5vw, 28.5rem);
+}
+
+h1, h2, h3 {
+  color: #0F7F25;
+}
+
+strong {
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+@mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
+    bottom: clamp($bottom-min, $bottom-vw, $bottom-max);
+    left: clamp($left-min, $left-vw, $left-max);
+  }
+*/
+.slider__overlay {
+  top: clamp(2rem, 5vw, 7.2rem);
+  left: clamp(1.8rem, 4.5vw, 6.9rem);
+  right: 85rem;
+}
+.slider__title {
+  font-size: clamp(1rem, 4vw, 7.2rem);
+  font-weight: 300;
+  color: #0F7F25;
+}
+.slider__subtitle {
+  font-size: clamp(0.2rem, 2vw, 2.4rem);
+  font-weight: 300;
+  color: #0F7F25;
+  top: 0;
+  margin-top: clamp(0.2rem, 1vw, 2.2rem);
+  width: 34.5rem;
+}
+.slider__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slider__image--one {
+  bottom: clamp(-22rem, -10vw, -2rem);
+  left: clamp(5rem, 12vw, 13rem);
+  width: clamp(2rem, 50vw, 75rem);
+  z-index: 2;
+  image-rendering: auto;
+}
+.slider__image--two {
+  bottom: clamp(-8rem, 5vw, -10rem);
+  left: clamp(2.8rem, 4.5vw, 6.9rem);
+  width: clamp(8rem, 15vw, 15rem);
+  z-index: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
