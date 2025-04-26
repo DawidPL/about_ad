@@ -9,6 +9,3 @@
 # Dependency directories
 node_modules/
 
-### custom ###
-css/
-scss/

@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as v;
+
+.slider{
+    &__overlay{
+        top:7.2rem;
+        left:6.9rem;
+    }
+    &__image{
+        display:block;
+        width:100%;
+        height:auto;
+    }
+    & > *:not(.slider__image){
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}
