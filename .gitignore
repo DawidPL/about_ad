@@ -1,0 +1,14 @@
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### Node ###
+
+# Dependency directories
+node_modules/
+
+### custom ###
+css/
+scss/
