@@ -20,3 +20,10 @@
     bottom: clamp($bottom-min, calc(#{$bottom-vw}), $bottom-max);
     left: clamp($left-min, calc(#{$left-vw}), $left-max);
 }
+
+
+@mixin media($min-width) {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  }

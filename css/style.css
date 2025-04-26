@@ -40,12 +40,12 @@ html {
   right: 85rem;
 }
 .slider__title {
-  font-size: clamp(1rem, 4vw, 7.2rem);
+  font-size: clamp(1rem, 4.5vw, 7rem);
   font-weight: 300;
   color: #0F7F25;
 }
 .slider__subtitle {
-  font-size: clamp(0.2rem, 2vw, 2.4rem);
+  font-size: clamp(0.2rem, 1.6vw, 2.2rem);
   font-weight: 300;
   color: #0F7F25;
   top: 0;
@@ -58,17 +58,45 @@ html {
   height: auto;
 }
 .slider__image--one {
-  bottom: clamp(-22rem, -10vw, -2rem);
-  left: clamp(5rem, 12vw, 13rem);
+  bottom: clamp(-22rem, -11vw, -2rem);
+  left: clamp(3.5rem, 8vw, 12rem);
   width: clamp(2rem, 50vw, 75rem);
   z-index: 2;
   image-rendering: auto;
 }
 .slider__image--two {
-  bottom: clamp(-8rem, 5vw, -10rem);
-  left: clamp(2.8rem, 4.5vw, 6.9rem);
-  width: clamp(8rem, 15vw, 15rem);
+  bottom: clamp(-2rem, 5vw, -5rem);
+  left: clamp(3.5rem, 2vw, 3rem);
+  width: clamp(2rem, 38vw, 50rem);
   z-index: 1;
+}
+@media (min-width: 480px) {
+  .slider__image--two {
+    bottom: clamp(-3rem, 5vw, -5rem);
+    left: clamp(4.2rem, 8vw, 20rem);
+    width: clamp(2rem, 37vw, 50rem);
+  }
+}
+@media (min-width: 768px) {
+  .slider__image--two {
+    bottom: clamp(-4.5rem, 10vw, -12rem);
+    left: clamp(7rem, 10vw, 20rem);
+    width: clamp(10rem, 34.5vw, 50rem);
+  }
+}
+@media (min-width: 1024px) {
+  .slider__image--two {
+    bottom: clamp(-5rem, 3vw, -6.5rem);
+    left: clamp(2rem, 10vw, 30rem);
+    width: clamp(17rem, 35vw, 54rem);
+  }
+}
+@media (min-width: 1200px) {
+  .slider__image--two {
+    bottom: clamp(-7rem, 5vw, -7.5rem);
+    left: clamp(2rem, 10vw, 40rem);
+    width: clamp(17rem, 35vw, 54rem);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
