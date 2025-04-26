@@ -9,6 +9,10 @@ h1, h2, h3 {
   color: #0F7F25;
 }
 
+strong {
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,21 +28,47 @@ html {
   font-size: 62.5%;
 }
 
+/*
+@mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
+    bottom: clamp($bottom-min, $bottom-vw, $bottom-max);
+    left: clamp($left-min, $left-vw, $left-max);
+  }
+*/
 .slider__overlay {
-  top: 7.2rem;
-  left: 6.9rem;
+  top: clamp(2rem, 5vw, 7.2rem);
+  left: clamp(1.8rem, 4.5vw, 6.9rem);
+  right: 85rem;
+}
+.slider__title {
+  font-size: clamp(1rem, 4vw, 7.2rem);
+  font-weight: 300;
+  color: #0F7F25;
+}
+.slider__subtitle {
+  font-size: clamp(0.2rem, 2vw, 2.4rem);
+  font-weight: 300;
+  color: #0F7F25;
+  top: 0;
+  margin-top: clamp(0.2rem, 1vw, 2.2rem);
+  width: 34.5rem;
 }
 .slider__image {
   display: block;
   width: 100%;
   height: auto;
 }
-.slider > *:not(.slider__image) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.slider__image--one {
+  bottom: clamp(-22rem, -10vw, -2rem);
+  left: clamp(5rem, 12vw, 13rem);
+  width: clamp(2rem, 50vw, 75rem);
+  z-index: 2;
+  image-rendering: auto;
+}
+.slider__image--two {
+  bottom: clamp(-8rem, 5vw, -10rem);
+  left: clamp(2.8rem, 4.5vw, 6.9rem);
+  width: clamp(8rem, 15vw, 15rem);
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

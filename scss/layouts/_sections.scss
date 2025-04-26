@@ -1,20 +1,38 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
 .slider{
     &__overlay{
-        top:7.2rem;
-        left:6.9rem;
+        @include m.clamp-t-l(2rem, 5vw, 7.2rem, 1.8rem, 4.5vw, 6.9rem);
+        right: 85rem;
     }
+    &__title{
+        @include m.font(1rem, 4vw, 7.2rem, 300);
+    }
+    &__subtitle{
+        @include m.font(0.2rem, 2vw, 2.4rem, 300);
+        top:0;
+        margin-top:clamp(0.2rem, 1vw, 2.2rem);
+        width:34.5rem;
+
+    }
+
     &__image{
         display:block;
         width:100%;
         height:auto;
-    }
-    & > *:not(.slider__image){
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
+        &--one{
+            @include m.clamp-b-l(-22rem, -10vw, -2rem, 5rem, 12vw, 13rem);
+            width: clamp(2rem, 50vw, 75rem);
+            z-index:2;
+            image-rendering: auto;
+        }
+        &--two{
+            //left:13rem;
+            //bottom: -10rem;
+            @include m.clamp-b-l(-8rem, 5vw, -10rem, 2.8rem, 4.5vw, 6.9rem);
+            width: clamp(8rem, 15vw, 15rem);
+            z-index: 1;
+        }
     }
 }

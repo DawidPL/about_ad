@@ -1,5 +1,22 @@
-@mixin font($font-size, $font-weight, $font-color: v.$primary-font-color) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    color: $font-color;
+@use "variables" as v;
+
+@mixin font($min, $preferred, $max, $weight, $color: v.$primary-font-color) {
+    font-size: clamp($min, $preferred, $max);
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin clamp-t-l($top-min, $top-vw, $top-max, $left-min, $left-vw, $left-max) {
+    top: clamp($top-min, $top-vw, $top-max);
+    left: clamp($left-min, $left-vw, $left-max);
+  }
+/*
+@mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
+    bottom: clamp($bottom-min, $bottom-vw, $bottom-max);
+    left: clamp($left-min, $left-vw, $left-max);
+  }
+*/
+  @mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
+    bottom: clamp($bottom-min, calc(#{$bottom-vw}), $bottom-max);
+    left: clamp($left-min, calc(#{$left-vw}), $left-max);
 }
