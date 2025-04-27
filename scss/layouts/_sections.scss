@@ -262,15 +262,13 @@
             @include m.clamp-t-l(2rem, 3.5vw, 4rem, 15rem, 38vw, 60rem);
         }
        &--image{
+        aspect-ratio: 1 / 1;
         width: clamp(7rem, 10vw, 18rem);
-        height: clamp(7rem, 10vw, 18rem);
         @include m.media(480px) {
             width: clamp(10rem, 15vw, 20rem);
-            height: clamp(10rem, 15vw, 20rem);
         }
         @include m.media(768px) {
             width: clamp(10rem, 10vw, 18rem);
-            height: clamp(10rem, 10vw, 18rem);
         }
        }
     }
@@ -301,6 +299,50 @@
     &__text{
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
         @include m.font(1.1rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        }
+    }
+}
+.info-icons{
+    margin-top:clamp(3rem, 6vw, 10.4rem);
+    &__single{
+        height:clamp(20rem, 30vw, 40rem);;
+        position:relative;
+        @include m.media(768px) {
+            &::after{
+                content: "";
+                margin-top:2.5rem;
+                margin-bottom:1rem;
+                position: absolute;
+                bottom: 0; 
+                left: 47%; 
+                transform: translateX(-50%); 
+                width: 88%; 
+                height: 1.5px; 
+                background-color: v.$border-color;
+                opacity: 0.5;
+
+            }
+        }
+    }
+    &__image{
+        aspect-ratio: 1 / 1;
+        width: clamp(6rem, 10vw, 10rem);
+    }
+    &__title{
+        min-height: 1rem;
+        @include m.font(1.2rem, 3vw, 2.8rem, 500);
+        @include m.media(768px) {
+            min-height: 4rem;
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+        @include m.media(1200px) {
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+    }
+    &__text{
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
         @include m.media(480px) {
             @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
         }
