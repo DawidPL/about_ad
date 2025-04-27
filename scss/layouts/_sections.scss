@@ -223,3 +223,28 @@
         height:auto;
     }
 }
+.feautures{
+    margin-top:clamp(3rem, 6vw, 10.7rem);
+    &__image{
+        width:clamp(30%, 50vw, 50%);
+        height:auto;
+        @include m.media(768px) {
+            width:clamp(60%, 75vw, 100%);
+        }
+        @include m.media(1200px) {
+            width:clamp(55%, 75vw, 100%);
+        }
+    }
+    &__title{
+        @include m.font(1.5rem, 3vw, 2.8rem, 500);
+        @include m.media(768px) {
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+        @include m.media(1200px) {
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+    }
+    &__text{
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+    }
+}
