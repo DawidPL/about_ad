@@ -3,36 +3,193 @@
 
 .slider{
     &__overlay{
-        @include m.clamp-t-l(2rem, 5vw, 7.2rem, 1.8rem, 4.5vw, 6.9rem);
         right: 85rem;
+        @include m.clamp-t-l(2rem, 5vw, 7.2rem, 1.8rem, 4.5vw, 6.9rem);
     }
     &__title{
-        @include m.font(1rem, 4vw, 7.2rem, 300);
+        @include m.font(1rem, 4.5vw, 7.2rem, 300);
     }
     &__subtitle{
-        @include m.font(0.2rem, 2vw, 2.4rem, 300);
         top:0;
         margin-top:clamp(0.2rem, 1vw, 2.2rem);
         width:34.5rem;
-
+        @include m.font(0.2rem, 1.6vw, 2.2rem, 300);
     }
-
     &__image{
         display:block;
         width:100%;
         height:auto;
         &--one{
-            @include m.clamp-b-l(-22rem, -10vw, -2rem, 5rem, 12vw, 13rem);
             width: clamp(2rem, 50vw, 75rem);
             z-index:2;
             image-rendering: auto;
+            @include m.clamp-b-l(-22rem, -11vw, -2rem, 3.5rem, 8vw, 12rem);
         }
         &--two{
-            //left:13rem;
-            //bottom: -10rem;
-            @include m.clamp-b-l(-8rem, 5vw, -10rem, 2.8rem, 4.5vw, 6.9rem);
-            width: clamp(8rem, 15vw, 15rem);
+            width: clamp(2rem, 38vw, 50rem);
             z-index: 1;
+            @include m.clamp-b-l(-2rem, 5vw, -5rem, 3.5rem, 2vw, 3rem);
+            @include m.media(480px) {
+                width: clamp(2rem, 37vw, 50rem);
+                @include m.clamp-b-l(-3rem, 5vw, -5rem, 4.2rem, 8vw, 20rem);
+            }
+            @include m.media(768px) {
+                width: clamp(10rem, 34.5vw, 50rem);
+                @include m.clamp-b-l(-4.5rem, 10vw, -12rem, 7rem, 10vw, 20rem);
+            }
+            @include m.media(1024px) {
+                width: clamp(17rem, 35vw, 54rem);
+                @include m.clamp-b-l(-5rem, 3vw, -6.5rem, 2rem, 10vw, 30rem);
+            }
+            @include m.media(1200px) {
+                width: clamp(17rem, 35vw, 54rem);
+                @include m.clamp-b-l(-7rem, 5vw, -7.5rem, 2rem, 10vw, 40rem);
+            }
+        }
+    }
+}
+
+.heading{
+    margin-top:clamp(5rem, 10vw, 16.6rem);
+    &__title{
+        margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
+        margin-top:1.6rem;
+        margin-bottom:clamp(0.8rem, 1.5vw, 2.3rem);
+        @include m.font(2rem, 4vw, 6.4rem, 300);
+    }
+    &__subtitle{
+        width:fit-content;
+        border-radius: 0.7rem;
+        background-color: v.$button-color;
+        @include m.clamp-padding(0.2rem, 1vw, 0.8rem, 
+                                0.8rem, 1.5vw, 2.6rem,
+                                0.2rem, 0.5vw, 1.2rem,
+                                0.8rem, 1.5vw, 2.7rem);
+        
+        @include m.font(1.1rem, 1.2vw, 2.1rem, 500, v.$accent-color);
+        @include m.media(1200px) {
+            padding:0.8rem 2.6rem 1.2rem 2.7rem;
+            width:fit-content;
+        }
+    }
+    &__text{
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
+    }
+}
+
+.box{
+    margin:auto;
+    padding:0;
+
+    &__content{
+        margin-top:clamp(1.5rem, 3.2vw, 10rem);
+        padding-left:0;
+        @include m.media(768px){
+            margin-top:clamp(1.5rem, 3.2vw, 10rem);
+            padding-left:clamp(3rem, 6vw, 10rem);
+        }
+    }
+    &__subtitle{
+        width:fit-content;
+        border-radius: 0.7rem;
+        background-color: v.$button-color;
+        margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
+        @include m.clamp-padding(0.2rem, 1vw, 1rem, 
+                                1rem, 1.5vw, 3.9rem,
+                                0.3rem, 0.5vw, 1rem,
+                                0.8rem, 1.5vw, 3.2rem);
+       
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 500, v.$accent-color);
+    }
+    &__text{
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+    }
+}
+.properties{
+    &__line{
+        top:clamp(2rem, 5vw, 8rem);
+        left:0;
+        height:40%;
+        border-right:clamp(0.7rem, 1.2vw, 2.1rem) solid v.$primary-color;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        @include m.media(480px){
+            top:clamp(3rem, 5vw, 8rem);
+        }    
+    }
+    &__heading{
+        margin-top:clamp(1rem, 1.3vw, 2rem);
+        padding-left:clamp(0.15rem, 0.25vw, 0.5rem);
+        top:0px;
+        left:clamp(2rem, 4vw, 6.9rem);
+        @include m.media(480px){
+            margin-top:clamp(1.5rem, 1.2vw, 2.5rem);
+            padding-left:clamp(0.30rem, 0.50vw, 1rem);
+        }
+    }
+    &__extra{
+        @include m.font(1rem, 3vw, 5rem, 500, v.$primary-font-color);
+        span:first-child{
+            @include m.font(4rem, 14vw, 20rem, 300, v.$primary-font-color);
+        }
+        span:last-child{
+            @include m.font(1rem, 7vw, 15rem, 300, v.$primary-font-color);
+        }
+        @include m.media(480px){
+            @include m.font(1rem, 3vw, 5rem, 500, v.$primary-font-color);
+            span:first-child{
+                @include m.font(4rem, 18vw, 23rem, 300, v.$primary-font-color);
+            }
+            span:last-child{
+                @include m.font(1rem, 10vw, 20rem, 300, v.$primary-font-color);
+            }
+        }
+    }
+    &__subtitle{
+        line-height: 1;
+        @include m.clamp-b-l(-2rem, -6vw, -3rem, 0.5rem, 2vw, 4rem);
+        @include m.font(0.7rem, 1.8vw, 2.8rem, 600, v.$primary-font-color);
+        @include m.media(480px){
+            line-height: 1.4;
+            margin-top:clamp(1.5rem, 1.2vw, 2.5rem);
+            @include m.clamp-b-l(-8rem, -5vw, -3rem, 2.5rem, 3vw, 5rem);
+            @include m.font(1rem, 1.8vw, 2.8rem, 600, v.$primary-font-color);
+        }        
+    }
+    &__box{
+        margin-top:clamp(1.5rem, 3.2vw, 5.8rem);
+        top:0;
+        right:clamp(1.5rem, 2vw, 3rem);
+        width:clamp(13rem, 15vw, 20rem);
+        height:clamp(12rem, 38vw, 20rem);
+        padding: clamp(1.2rem, 2vw, 3rem);
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 1.5rem;
+        @include m.media(480px){
+            padding: clamp(2rem, 1vw, 4rem);
+            right:clamp(1.7rem, 2.2vw, 3.5rem);
+            width:clamp(10rem, 35vw, 40rem);
+            height:clamp(5rem, 40vw, 45rem);
+        }
+    }
+    &__title{
+        @include m.font(1rem, 2vw, 3.4rem, 400, v.$primary-font-color);
+        margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
+    }
+    &__text{
+        line-height: 1.2;
+        @include m.font(0.70rem, 1vw, 1.8rem, 300, v.$secondary-font-color);
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.media(480px){
+            @include m.font(1rem, 1.8vw, 4.8rem, 300, v.$secondary-font-color);
+            margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        }
+        @include m.media(768px){
+            line-height: 1.4;
+            @include m.font(1.5rem, 1.5vw, 6rem, 300, v.$secondary-font-color);
+            margin-bottom:clamp(3rem, 6vw, 10.1rem);
         }
     }
 }
