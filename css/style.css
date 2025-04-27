@@ -294,4 +294,46 @@ html {
   }
 }
 
+.slider-middle {
+  margin-top: clamp(3rem, 6vw, 10.4rem);
+}
+.slider-middle__overlay {
+  right: clamp(10rem, 5vw, 30rem);
+  top: clamp(4rem, 12vw, 16.2rem);
+  left: clamp(1.8rem, 4.5vw, 6.9rem);
+}
+.slider-middle__title {
+  font-size: clamp(1rem, 2.5vw, 3.5rem);
+  font-weight: 400;
+  color: #0F7F25;
+}
+@media (min-width: 480px) {
+  .slider-middle__title {
+    font-size: clamp(1rem, 3.5vw, 4.2rem);
+    font-weight: 400;
+    color: #0F7F25;
+  }
+}
+.slider-middle__subtitle {
+  top: 0;
+  margin-top: clamp(0.4rem, 1vw, 2.2rem);
+  width: clamp(10rem, 10vw, 20rem);
+  font-size: clamp(0.6rem, 1.1vw, 1.8rem);
+  font-weight: 400;
+  color: #0F7F25;
+}
+@media (min-width: 480px) {
+  .slider-middle__subtitle {
+    width: clamp(15rem, 30vw, 42rem);
+    font-size: clamp(0.8rem, 1.5vw, 2.2rem);
+    font-weight: 400;
+    color: #0F7F25;
+  }
+}
+.slider-middle__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
