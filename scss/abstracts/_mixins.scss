@@ -21,6 +21,15 @@
     left: clamp($left-min, calc(#{$left-vw}), $left-max);
 }
 
+@mixin clamp-padding($min-top, $vw-top, $max-top, 
+                    $min-right, $vw-right, $max-right,
+                    $min-bottom, $vw-bottom, $max-bottom,
+                    $min-left, $vw-left, $max-left,) {
+    padding-top: clamp($min-top, $vw-top, $max-top);
+    padding-right: clamp($min-right, $vw-right, $max-right);
+    padding-bottom: clamp($min-bottom, $vw-bottom, $max-bottom);
+    padding-left: clamp($min-left, $vw-left, $max-left);
+  }
 
 @mixin media($min-width) {
     @media (min-width: $min-width) {
