@@ -74,7 +74,7 @@
     }
     &__text{
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
-        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
     }
 }
 
@@ -104,7 +104,7 @@
     }
     &__text{
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
-        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
     }
 }
 .properties{
@@ -246,5 +246,63 @@
     }
     &__text{
         @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        }
+    }
+}
+.product-info{
+    margin-top:clamp(3rem, 6vw, 10.4rem);
+    &__icon{
+        @include m.clamp-t-l(2rem, 1.5vw, 3rem, 25rem, 75vw, 45rem);
+        @include m.media(480px) {
+            @include m.clamp-t-l(4rem, 7vw, 10rem, 20rem, 75vw, 60rem);
+        }
+        @include m.media(768px) {
+            @include m.clamp-t-l(2rem, 3.5vw, 4rem, 15rem, 38vw, 60rem);
+        }
+       &--image{
+        width: clamp(7rem, 10vw, 18rem);
+        height: clamp(7rem, 10vw, 18rem);
+        @include m.media(480px) {
+            width: clamp(10rem, 15vw, 20rem);
+            height: clamp(10rem, 15vw, 20rem);
+        }
+        @include m.media(768px) {
+            width: clamp(10rem, 10vw, 18rem);
+            height: clamp(10rem, 10vw, 18rem);
+        }
+       }
+    }
+
+    &__content{
+        margin-top:clamp(0.5rem, 1vw, 2rem);
+        max-width: 480px;
+        padding-left:0;
+        @include m.media(480px) {
+            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        }
+        @include m.media(768px){
+            margin-top:clamp(1.5rem, 3.2vw, 10rem);
+            padding-left:clamp(5rem, 10vw, 15rem);
+        }
+        @include m.media(1200px){
+            margin-top:clamp(5rem, 5.2vw, 20rem);
+            padding-left:clamp(5rem, 10vw, 15rem);
+        }
+    }
+    &__title{
+        margin-top:clamp(1rem, 2.5vw, 5rem);
+        @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        @include m.media(480px) {
+            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        }
+    }
+    &__text{
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.font(1.1rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        }
     }
 }
