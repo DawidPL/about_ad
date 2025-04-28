@@ -26,13 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $mail->CharSet = 'UTF-8';
 
    $mail->setFrom('formularz@aloe.pl', 'Formularz');
-   $mail->addAddress('biuro@aboutad.pl');
+   $mail->addAddress('dawiduam@gmail.com');
    $mail->Subject = 'Wiadomość z formularza kontaktowego - ALOE';
    $mail->isHTML(false);
 
-   if(empty($_POST['email'])){
-    $response['errors']['email'] = "Wprowadź email";
- }
    if(empty($_POST['name'])){
       $response['errors']['name'] = "Wprowadź imię";
    }
@@ -48,8 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    }
 
    $mail->Body = <<<EOT
-Email: {$_POST['email']}
-Imię i nazwisko: {$_POST['name']}
+Imię: {$_POST['name']}
 Telefon: {$_POST['tel']}
 Wiadomość: {$_POST['message']}
 EOT;

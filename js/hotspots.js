@@ -5,6 +5,8 @@ const description = hotspotText.querySelector('.hotspots__description');
 let currentIndex = 0;
 
 function initHotspots(index) {
+  if (!hotspots || !hotspots.length) return; // jeśli nie ma hotspotów - przerywamy
+  if (!hotspots[index]) return; // jeśli indeks jest poza zakresem - przerywamy
     
   hotspots.forEach(hotspot => hotspot.classList.remove('active'));
   

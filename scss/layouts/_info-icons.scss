@@ -8,20 +8,16 @@
         position:relative;
         @include m.media(768px) {
             height:clamp(25rem, 30vw, 40rem);
+            margin-bottom: 2rem;
             &::after{
                 content: "";
-                margin-top:2.5rem;
-                margin-bottom:1rem;
                 position: absolute;
                 bottom: 0; 
-                left: 42%; 
-                transform: translateX(-50%); 
+                left: 0; 
                 width: 80%; 
                 height: 1.5px; 
                 background-color: v.$border-color;
-                opacity: 0.5;
-
-            }
+                opacity: 0.75;            }
         }
     }
     &__image{

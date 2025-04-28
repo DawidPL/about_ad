@@ -37,7 +37,7 @@
     
     &__hotspot-text {
         position: absolute;
-        max-width: clamp(200px, 40vw, 400px);
+        max-width: clamp(150px, 30vw, 200px);
         padding: 20px;
         background: v.$white-color;
         border: 1px solid v.$white-color;
@@ -48,6 +48,9 @@
         opacity: 0;
         pointer-events: none;
         text-align: center;
+        @include m.media(480px) {
+            max-width: clamp(200px, 40vw, 400px);
+        }
         &.active {
             opacity: 1;
         }
