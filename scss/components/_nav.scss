@@ -10,6 +10,9 @@
   
     &__item {
       margin-left: 2rem;
+      &:hover {
+        animation: bounce .5s ease;
+      }
     }
   
     &__link {

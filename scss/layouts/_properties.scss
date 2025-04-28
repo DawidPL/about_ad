@@ -64,8 +64,16 @@
         @include m.media(480px){
             padding: clamp(2rem, 1vw, 4rem);
             right:clamp(1.7rem, 2.2vw, 3.5rem);
-            width:clamp(10rem, 35vw, 40rem);
-            height:clamp(5rem, 40vw, 45rem);
+            width:clamp(10rem, 30vw, 30rem);
+            height:clamp(4rem, 35vw, 20rem);
+        }
+        @include m.media(768px){
+            width:clamp(10rem, 34vw, 40rem);
+            height:clamp(10rem, 34vw, 45rem);
+        }
+        @include m.media(1400px){
+            width:clamp(20rem, 34vw, 50rem);
+            height:clamp(20rem, 34vw, 50rem);
         }
     }
     &__title{
@@ -74,16 +82,21 @@
     }
     &__text{
         line-height: 1.2;
-        @include m.font(0.70rem, 1vw, 1.8rem, 300, v.$secondary-font-color);
+        @include m.font(0.6rem, 1vw, 1.5rem, 300, v.$secondary-font-color);
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
         @include m.media(480px){
-            @include m.font(1rem, 1.8vw, 4.8rem, 300, v.$secondary-font-color);
+            @include m.font(0.7rem, 1.5vw, 2.5rem, 300, v.$secondary-font-color);
             margin-bottom:clamp(3rem, 6vw, 10.1rem);
         }
         @include m.media(768px){
             line-height: 1.4;
-            @include m.font(1.5rem, 1.5vw, 6rem, 300, v.$secondary-font-color);
-            margin-bottom:clamp(3rem, 6vw, 10.1rem);
+            @include m.font(1.5rem, 1.1vw, 2.5rem, 300, v.$secondary-font-color);
+            margin-bottom:clamp(3rem, 6vw, 3rem);
+        }
+        @include m.media(1400px){
+            line-height: 1.4;
+            @include m.font(2rem, 1vw, 3rem, 300, v.$secondary-font-color);
+            margin-bottom:clamp(3rem, 6vw, 3rem);
         }
     }
 }
