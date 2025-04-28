@@ -1,4 +1,4 @@
-# Landing Page - Hotspot Animation
+# Landing Page - Aloe
 
 Prosty i nowoczesny landing page z dynamicznymi hotspotami, responsywnym opisem tekstu oraz dodatkowymi funkcjonalnościami jak formularz kontaktowy, scroll to top i animacje.
 
