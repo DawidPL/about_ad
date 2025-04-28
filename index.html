@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aloesowy krem przeciwsłoneczny</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aloesowy krem przeciwsłoneczny</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
 </head>
 <body>
 
-  <header class="header">
-      <nav class="header__nav">
-        <a class="header__link active" href="#start">Start</a>
-        <a class="header__link" href="#about">Właściwości</a>
-        <a class="header__link" href="#">Sposob użycia</a>
-        <a class="header__link" href="#">Skład produktu</a>
-        <a class="header__link" href="#contact">Kontakt</a>
+  <header class="header container">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container justify-content-end">
+          <button 
+            class="navbar-toggler ms-auto" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarMenu" 
+            aria-controls="navbarMenu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse navbar-custom__menu" id="navbarMenu">
+            <ul class="navbar-nav">
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#home">Start</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#about">O produkcie</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#info">Specyfikacja</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#contact">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
   </header>
+
     <main>
-        <section class="slider">
+        <section id="home" class="slider">
             <div class=" position-relative">
                 <img class="slider__image" src="assets/images/slider-top.png" alt="Kobieta na plaży" />
                 <div class="slider__overlay position-absolute d-flex flex-column">
                     <h1 class="slider__title">NATURALNA ZASADA PIĘKNA</h1>
                     <h2 class="slider__subtitle">Skuteczna ochrona skóry <br>przed promieniami <strong>UVA i UVB</strong></h2>
                 </div>
-                <div class="slider__media position-relative d-flex no-wrap">
+                <div class="slider__media position-relative d-flex">
                     <img class="slider__image--one position-absolute" src="assets/images/subimage-1.png" alt="Zdjęcie produktu ALOE" />
                     <img class="slider__image--two position-absolute" src="assets/images/subimage-2.png" alt="Zdjęcie liści aloesu" />
                 </div>
             </div>  
              
           </section>
-          <section class="heading">
+          <section class="heading container">
             <div class="row w-100">
                 <div class="col-10 mx-auto text-center">
                     <h3 class="heading__subtitle mx-auto">Zdrowa i naturalna opalenizna</h3>
@@ -50,7 +76,8 @@
                 </div>  
             </div>
           </section>
-          <section class="box">
+
+          <section id="about" class="box container">
             <div class="row w-100 m-0 gx-5">
                 <div class="box__image col-12 col-md-6 p-0">
                     <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-image.png" alt="Zdjęcie uśmiechniętej kobiety" />
@@ -62,19 +89,21 @@
                 </div>  
             </div>
           </section>
-          <section class="hotspots">
+          <section class="hotspots container">
             <div class="row w-100">
 
                 <!-- to do -->
 
             </div>
           </section>
-          <section class="heading">
+
+          <section class="heading container">
             <div class="row w-100 text-center">
                 <h2 class="heading__title mb-5">Ochrona i pielęgnacja. Poznaj moc naturalnych składników.</h2>
             </div>
           </section>
-          <section class="properties">
+
+          <section class="properties container">
             <div class="position-relative">
               <img class="properties__image img-fluid" loading="lazy" src="assets/images/slider-middle.png" alt="Zdjęcie kojącego aloesu" />
               <div class="properties__line position-absolute"></div>
@@ -90,7 +119,7 @@
                 </div>
           </section>
 
-          <section class="slider-middle">
+          <section class="slider-middle container">
             <div class="position-relative">
               <img class="slider-middle__image" src="assets/images/slider-bottom.png" alt="Zdjęcie zadowolonej klientki" />
               <div class="slider-middle__overlay position-absolute">
@@ -99,27 +128,27 @@
             </div>
           </section>
 
-          <section class="feautures">
+          <section class="features container">
             <div class="row w-100 justify-content-between text-center">
-                <div class="feautures__single col-12 col-md-4">
-                    <img class="feautures__image img-fluid" loading="lazy" src="assets/images/box-1.png" alt="Zdjęcie kokosa" />
-                    <h2 class="feautures__title">Połączenie olejku kokosowego z olejem arganowym</h2>
-                    <p class="feautures__text">Nawilża i uspokaja skórę.</p>
+                <div class="features__single col-12 col-md-4">
+                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-1.png" alt="Zdjęcie kokosa" />
+                    <h2 class="features__title">Połączenie olejku kokosowego z olejem arganowym</h2>
+                    <p class="features__text">Nawilża i uspokaja skórę.</p>
                 </div>
-                <div class="feautures__single col-12 col-md-4">
-                    <img class="feautures__image img-fluid" loading="lazy" src="assets/images/box-2.png" alt="Zdjęcie aloesu" />
-                    <h2 class="feautures__title">Aloe Vera (40%)</h2>
-                    <p class="feautures__text">Odświeża i koi skórę, zapewniając zwiększoną ochronę.</p>
+                <div class="features__single col-12 col-md-4">
+                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-2.png" alt="Zdjęcie aloesu" />
+                    <h2 class="features__title">Aloe Vera (40%)</h2>
+                    <p class="features__text">Odświeża i koi skórę, zapewniając zwiększoną ochronę.</p>
                 </div>
-                <div class="feautures__single col-12 col-md-4">
-                    <img class="feautures__image img-fluid" loading="lazy" src="assets/images/box-3.png" alt="Zdjęcie kapsułek witaminy E" />
-                    <h2 class="feautures__title">Witamina E</h2>
-                    <p class="feautures__text">Zwalcza wolne rodniki.</p>
+                <div class="features__single col-12 col-md-4">
+                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-3.png" alt="Zdjęcie kapsułek witaminy E" />
+                    <h2 class="features__title">Witamina E</h2>
+                    <p class="features__text">Zwalcza wolne rodniki.</p>
                 </div>
             </div>
           </section>
 
-          <section class="product-info"">
+          <section id="info" class="product-info container">
             <div class="row w-100 m-0 gx-5">
                 <div class="product-info__image col-12 col-md-6 p-0">
                     <div class="position-relative">
@@ -136,7 +165,7 @@
             </div>
           </section>
 
-          <section class="info-icons">
+          <section class="info-icons container">
             <div class="row w-100 g-0 m-0">
                 <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
                     <div class="info-icons__icon">
@@ -168,7 +197,8 @@
                 </div>
             </div>
             </section>
-            <section class="details">
+
+            <section class="details container">
                 <div class="row w-100 g-0 m-0 text-center">
                     <div class="col-12 justify-content-center text-center">
                         <h2 class="details__title mb-5">Skład produktu</h2>
@@ -182,22 +212,52 @@
                     </div>
                 </div>
             </section>
-
             
-            <section id="contact" class="contact">
-                <div class="contact__container">
-                <h2 class="contact__heading">Kontakt</h2>
-               
+            <section id="contact" class="contact container">
+                <div class="col-12 text-center mb-1 mb-lg-5">
+                    <h2 class="contact__title">Kontakt</h2>
+                </div>
+                <form id="form" class="form col-12 col-lg-8 mx-auto d-flex flex-column  row p-0 g-0 " action="#" autocomplete="off">
+                    <div class="form__single col-12">
+                        <label for="name" class="form-label">Imię</label>
+                        <input class="form__controle" type="text" name="name" id="name">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form__single col-12">
+                        <label for="tel" class="form-label">Telefon</label>
+                        <input class="form__controle" type="tel" name="tel" id="tel">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form__single col-12">
+                        <label for="message" class="form-label">Wiadomość</label>
+                        <textarea class="form__controle" type="textarea" rows="4" cols="50" name="message" id="message"></textarea>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <input class="form__important" type="text" name="important" id="important"></input>
+                    <div class="mb-3 text-center">
+                        <div class="errors-list" role="alert"></div>
+                        <div id="loader"></div>
+                        <input name="submit" class="btn btn-submit" type="submit" value="WYŚLIJ">
+                        <p class="form__resp text-right"></p>
+                        <ul class="form__errors"></ul>
+                    </div>
+                </form>
             </section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container text-center p-5">
       <p class="footer__text">&copy; 2025. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
+  
+  <div class="scroll">
+    <span id="scroll-top">
+        <span class="scroll-to-top px-3 py-2">▴</span>
+    </span>
+   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

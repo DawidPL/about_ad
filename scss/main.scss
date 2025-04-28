@@ -7,11 +7,10 @@
 @use 'abstracts/variables' as v;
 
 
-@use 'layouts/header';
-@use 'layouts/footer';
-@use 'layouts/sections';
+@use 'layouts/layouts';
 
 @use 'components/buttons';
 @use 'components/form';
 @use 'components/hotspots';
 @use 'components/nav';
+@use 'components/scroll';
