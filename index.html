@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -34,7 +37,7 @@
       
           <div class="collapse navbar-collapse navbar-custom__menu" id="navbarMenu">
             <ul class="navbar-nav">
-              <li class="navbar-custom__item">
+              <li class="navbar-custom__item animate__animated animate__bounce">
                 <a class="navbar-custom__link" href="#home">Start</a>
               </li>
               <li class="navbar-custom__item">
@@ -57,7 +60,7 @@
             <div class=" position-relative">
                 <img class="slider__image" src="assets/images/slider-top.png" alt="Kobieta na plaży" />
                 <div class="slider__overlay position-absolute d-flex flex-column">
-                    <h1 class="slider__title">NATURALNA ZASADA PIĘKNA</h1>
+                    <h1 class="slider__title animate__animated animate__bounceIn animate__slow">NATURALNA ZASADA PIĘKNA</h1>
                     <h2 class="slider__subtitle">Skuteczna ochrona skóry <br>przed promieniami <strong>UVA i UVB</strong></h2>
                 </div>
                 <div class="slider__media position-relative d-flex">
@@ -79,20 +82,20 @@
 
           <section id="about" class="box container">
             <div class="row w-100 m-0 gx-5">
-                <div class="box__image col-12 col-md-6 p-0">
+                <div class="box__image col-12 col-md-6 p-0" data-aos="fade-in">
                     <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-image.png" alt="Zdjęcie uśmiechniętej kobiety" />
                 </div>
                 <div class="box__content col-12 col-md-6">
-                    <h3 class="box__subtitle">Wysoka ochrona</h3>
-                    <h2 class="box__title">Kompleks filtrów <br>PROSUN-UV</h2>
-                    <p class="box__text">Krem zawiera w sobie specjalne połączenie filtrów fizycznych i chemicznych, ktore zapewniają maksymalną fotostabilność oraz czas ochrony przed promieniami UVA oraz UVB.</p>
+                    <h3 class="box__subtitle" data-aos="fade-left" data-aos-duration="1000">Wysoka ochrona</h3>
+                    <h2 class="box__title" data-aos="fade-left" data-aos-duration="2000">Kompleks filtrów <br>PROSUN-UV</h2>
+                    <p class="box__text" data-aos="fade-left" data-aos-duration="3000">Krem zawiera w sobie specjalne połączenie filtrów fizycznych i chemicznych, ktore zapewniają maksymalną fotostabilność oraz czas ochrony przed promieniami UVA oraz UVB.</p>
                 </div>  
             </div>
           </section>
           <section class="hotspots container">
-            <div class="row w-100">
-
-                <!-- to do -->
+            <div class="">
+                <img class="properties__image img-fluid" loading="lazy" src="assets/images/slider-middle.png" alt="Zdjęcie kojącego aloesu" />
+                
 
             </div>
           </section>
@@ -108,13 +111,13 @@
               <img class="properties__image img-fluid" loading="lazy" src="assets/images/slider-middle.png" alt="Zdjęcie kojącego aloesu" />
               <div class="properties__line position-absolute"></div>
               <div class="properties__heading position-absolute">
-                <h2 class="properties__extra">do <span>20</span><span>%</span></h2>
+                <h2 class="properties__extra" data-aos="zoom-in" data-aos-duration="500">do <span>20</span><span>%</span></h2>
                 <h3 class="properties__subtitle position-absolute">STĘŻENIA CZYSTEGO,<br> NIEPASTERYZOWANEGO <br>ALOE VERA.</h3>
               </div>
              
-              <div class="properties__box position-absolute">
-                <h3 class="properties__title">WŁAŚCIWOŚCI <br>OCHRONNE I KOJĄCE <br>ALOESU</h3>
-                <p class="properties__text">Aloes Equilibra to surowiec ekstraktowany na zimno, <strong>w 100% czysty</strong> i nienaruszony. Dzięki specjalnej metodzie jego otrzymywania zachowuje swoje odżywcze właściwości: nawilża, łagodzi i odświeża skórę, zapewniając jej wzmożoną ochronę.</p>
+              <div class="properties__box position-absolute" data-aos="flip-left" data-aos-duration="500">
+                <h3 class="properties__title" data-aos="fade-left" data-aos-duration="2000">WŁAŚCIWOŚCI <br>OCHRONNE I KOJĄCE <br>ALOESU</h3>
+                <p class="properties__text" data-aos="fade-left" data-aos-duration="2000">Aloes Equilibra to surowiec ekstraktowany na zimno, <strong>w 100% czysty</strong> i nienaruszony. Dzięki specjalnej metodzie jego otrzymywania zachowuje swoje odżywcze właściwości: nawilża, łagodzi i odświeża skórę, zapewniając jej wzmożoną ochronę.</p>
 
                 </div>
           </section>
@@ -130,18 +133,18 @@
 
           <section class="features container">
             <div class="row w-100 justify-content-between text-center">
-                <div class="features__single col-12 col-md-4">
+                <div class="features__single col-12 col-md-4" data-aos="fade-right" data-aos-duration="2500">
                     <img class="features__image img-fluid" loading="lazy" src="assets/images/box-1.png" alt="Zdjęcie kokosa" />
                     <h2 class="features__title">Połączenie olejku kokosowego z olejem arganowym</h2>
                     <p class="features__text">Nawilża i uspokaja skórę.</p>
                 </div>
-                <div class="features__single col-12 col-md-4">
-                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-2.png" alt="Zdjęcie aloesu" />
+                <div class="features__single col-12 col-md-4" data-aos="fade-right" data-aos-duration="1500">
+                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-2.png" alt="Zdjęcie aloesu"/>
                     <h2 class="features__title">Aloe Vera (40%)</h2>
                     <p class="features__text">Odświeża i koi skórę, zapewniając zwiększoną ochronę.</p>
                 </div>
-                <div class="features__single col-12 col-md-4">
-                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-3.png" alt="Zdjęcie kapsułek witaminy E" />
+                <div class="features__single col-12 col-md-4" data-aos="fade-right" data-aos-duration="500">
+                    <img class="features__image img-fluid" loading="lazy" src="assets/images/box-3.png" alt="Zdjęcie kapsułek witaminy E"/>
                     <h2 class="features__title">Witamina E</h2>
                     <p class="features__text">Zwalcza wolne rodniki.</p>
                 </div>
@@ -153,7 +156,7 @@
                 <div class="product-info__image col-12 col-md-6 p-0">
                     <div class="position-relative">
                         <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-4.png" alt="Zdjęcie produktu: ALOE" />
-                        <div class="product-info__icon position-absolute">
+                        <div class="product-info__icon position-absolute" data-aos="flip-left" data-aos-duration="2000">
                             <img class="product-info__icon--image" src="assets/icons/teardrop.svg" alt="" />
                         </div>
                     </div>
@@ -169,28 +172,28 @@
             <div class="row w-100 g-0 m-0">
                 <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
                     <div class="info-icons__icon">
-                        <img class="info-icons__image" src="assets/icons/fire.svg" alt="" />
+                        <img class="info-icons__image anim-icon" src="assets/icons/fire.svg" alt="" data-aos="flip-left" data-aos-duration="750"/>
                     </div>
                     <h2 class="info-icons__title my-3 my-md-5">Pojemnik pod <br>ciśnieniem</h2>
                     <p class="info-icons__text mx-5 mx-md-0">Trzymaj z dala od źródeł ciepła, gorących powierzchni, iskry, otwartego ognia lub innych źródeł zapłonu.</p>
                 </div>
                 <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
                     <div class="info-icons__icon">
-                        <img class="info-icons__image" src="assets/icons/weather.svg" alt="" />
+                        <img class="info-icons__image anim-icon" src="assets/icons/weather.svg" alt="" data-aos="flip-left" data-aos-duration="750"/>
                     </div>
                     <h2 class="info-icons__title my-3 my-md-5">Chronić przed <br>światłem słonecznym</h2>
                     <p class="info-icons__text mx-5 mx-md-0">Nie wystawiaj pojemnika na działanie temperatur powyżej 50°C/122°F.</p>
                 </div>
                 <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
                     <div class="info-icons__icon">
-                        <img class="info-icons__image" src="assets/icons/eye.svg" alt="" />
+                        <img class="info-icons__image anim-icon" src="assets/icons/eye.svg" alt="" data-aos="flip-right" data-aos-duration="750"/>
                     </div>
                     <h2 class="info-icons__title my-3 my-md-5">Bezpieczne <br>stosowanie produktu</h2>
                     <p class="info-icons__text mx-5 mx-md-0">Używając kremu, unikaj okolic oczu. W przypadku kontaktu dokładnie je przemyj.</p>
                 </div>
                 <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
                     <div class="info-icons__icon">
-                        <img class="info-icons__image" loading="lazy" src="assets/icons/face.svg" alt="" />
+                        <img class="info-icons__image anim-icon" src="assets/icons/face.svg" alt="" data-aos="flip-right" data-aos-duration="750"/>
                     </div>
                     <h2 class="info-icons__title my-3 my-md-5">Chronić przed <br>dziećmi</h2>
                     <p class="info-icons__text mx-5 mx-md-0">Trzymaj produkt z dala od dzieci.</p>
@@ -259,5 +262,7 @@
    </div>
 
   <script src="js/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
