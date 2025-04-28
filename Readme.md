@@ -19,7 +19,7 @@ Nie miałem pewności jak ma wyglądać wersja mobilna: gdzie zachować jakie od
 - **Sass** (zmienne, mixiny)
 - **JavaScript** (struktura modułowa, walidacja formularza, scroll to top, hotspoty)
 - **PHP** (formularz kontaktowy z wykorzystaniem PHPMailer)
-- **Bootstrap 5** (nawigacja, grid, )
+- **Bootstrap 5** (nawigacja, grid)
 - **Animate.css** (gotowe animacje CSS)
 - **AOS (Animate On Scroll Library)** (animacje pojawiania się elementów podczas scrollowania)
 
@@ -35,7 +35,7 @@ Nie miałem pewności jak ma wyglądać wersja mobilna: gdzie zachować jakie od
 - **Animacje wejścia elementów** za pomocą AOS oraz Animate.css
 
 ## Uruchomienie lokalnie
-git 
+
 1. Pobierz/sklonuj repozytorium:
 
    git clone https://github.com/DawidPL/about_ad.git
