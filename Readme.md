@@ -1,12 +1,12 @@
 # Landing Page - Aloe
 
-Prosty i nowoczesny landing page z dynamicznymi hotspotami, responsywnym opisem tekstu oraz dodatkowymi funkcjonalnościami jak formularz kontaktowy, scroll to top i animacje.
+Prosty i nowoczesny landing page z dynamicznymi hotspotami, rwd mobile first oraz dodatkowymi funkcjonalnościami jak formularz kontaktowy, scroll to top i animacje.
 
 ## Omówienie
 
 Napisałem całość w czystym kodzie aby pokazać swoje umiejętności od A do Z. Nie skorzystałem z gotowych systemów jak np wspomniany w zadaniu Wordpress. Uważam, że do tak prostej strony zbędne jest dodatkowe obciążenie całym zapleczem CMSa, które może negatywnie odbić się w Google. Dzięki kompleksowemu podejściu i napisaniu strony od 0 wdrożyłem tylko to, czego wymagał projekt. 
 
-Dodatkowo dodałem 2 wersję strony w wersji php. Dostępna w folderze V2/.Poprzez includowanie poszczególnych elementór wygląda to bardziej czytelnie. Zależnie od tego czy mamy serwer do uruchomienia można wybrać wersję php lub html
+Dodatkowo dodałem 2 wersję strony w wersji php. Dostępna w folderze V2/. Poprzez includowanie poszczególnych elementór wygląda to bardziej czytelnie. Zależnie od tego czy mamy serwer do uruchomienia można wybrać wersję php lub html.
 
 ## Problemy
 
