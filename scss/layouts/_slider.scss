@@ -12,7 +12,6 @@
     &__subtitle{
         top:0;
         margin-top:clamp(0.2rem, 1vw, 2.2rem);
-        width:34.5rem;
         @include m.font(0.2rem, 1.6vw, 2.2rem, 300);
     }
     &__image{

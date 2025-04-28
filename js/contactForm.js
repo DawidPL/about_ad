@@ -55,28 +55,6 @@ const contactForm = (formSelector = "#form") => {
                 [input.id]: !isValid
             };
         },
-        validateEmail: function (input) {
-            let isValid = false;
-            let email = input.value;
-            let errorContainer = input.parentElement.querySelector(".invalid-feedback");
-            const reg = /^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$/;
-            isValid = reg.test(email);
-            if (isValid) {
-                errorContainer.innerText = "";
-                input.classList.remove('is-invalid');
-                input.classList.add('is-valid');
-            } else {
-                errorContainer.innerText = "Proszę podać poprawny adres email";
-                input.classList.remove('is-valid');
-                input.classList.add('is-invalid');
-            }
-            input.dataset.valid = isValid;
-            this.errors = {
-                ...this.errors,
-                [input.id]: !isValid
-            };
-        },
-
         validateRequired: function (input) {
             let isValid = false;
             let errorContainer = input.parentElement.querySelector(".invalid-feedback");
@@ -124,7 +102,6 @@ const contactForm = (formSelector = "#form") => {
                 tel: this.validatePhone.bind(this),
                 text: this.validateText.bind(this),
                 textarea: this.validateText.bind(this),
-                email: this.validateEmail.bind(this),
             };
             Array.from(this.form.elements).forEach((el) => {
                 el.addEventListener("input", () => {
@@ -137,7 +114,6 @@ const contactForm = (formSelector = "#form") => {
                 tel: this.validatePhone.bind(this),
                 text: this.validateText.bind(this),
                 textarea: this.validateText.bind(this),
-                email: this.validateEmail.bind(this),
             };
             Array.from(this.form.elements).forEach((el) => {
                 if (el.required) {

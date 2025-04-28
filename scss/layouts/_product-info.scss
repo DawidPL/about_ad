@@ -25,7 +25,8 @@
 
     &__content{
         margin-top:clamp(0.5rem, 1vw, 2rem);
-        max-width: 480px;
+        //max-width: 480px;
+        padding-right:clamp(1rem, 10vw, 15rem);
         padding-left:0;
         @include m.media(480px) {
             @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
@@ -36,7 +37,6 @@
         }
         @include m.media(1200px){
             margin-top:clamp(5rem, 5.2vw, 20rem);
-            padding-left:clamp(5rem, 10vw, 15rem);
         }
     }
     &__title{

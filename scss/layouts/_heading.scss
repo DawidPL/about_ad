@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .heading{
-    margin-top:clamp(5rem, 10vw, 16.6rem);
+    margin-top:clamp(2rem, 10vw, 5rem);
     &__title{
         margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
         margin-top:1.6rem;
@@ -28,4 +28,7 @@
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
         @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
     }
+}
+.heading-first{
+    margin-top:clamp(5rem, 10vw, 16.6rem);
 }

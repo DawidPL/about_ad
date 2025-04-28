@@ -1,7 +1,9 @@
 import scrollTop from './scrollTop.js';
 import contactForm from './contactForm.js';
+import initHotspots from './hotspots.js';
 
 
+// scroll top handler
 scrollTop();
 
 // contact form handler
@@ -11,7 +13,7 @@ if (form) {
     contact.init();
  }
 
-
+ // aos handler
  window.onload = function() {
     AOS.init({
         offset: 200,
@@ -20,3 +22,10 @@ if (form) {
         once: false, 
     });
 };
+
+// hotspot handler
+document.addEventListener('DOMContentLoaded', () => {
+    initHotspots(); 
+  });
+
+
