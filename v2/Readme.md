@@ -35,7 +35,7 @@ Nie miałem pewności jak ma wyglądać wersja mobilna: gdzie zachować jakie od
 - **Animacje wejścia elementów** za pomocą AOS oraz Animate.css
 
 ## Uruchomienie lokalnie
-git 
+
 1. Pobierz/sklonuj repozytorium:
 
    git clone https://github.com/DawidPL/about_ad.git

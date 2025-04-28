@@ -1,0 +1,99 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+
+.contact{
+
+  &__title {
+    @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        @include m.media(480px) {
+            @include m.font(2rem, 4vw, 6.6rem, 300, v.$primary-font-color);
+        }
+  }
+}
+.form{
+    
+    &__single{
+        padding:10px;
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 500, v.$primary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 500, v.$primary-font-color); 
+        }
+        & input, textarea{
+            border:2px solid v.$button-color;
+            background-color:v.$button-color;
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: border-color 0.5s ease;
+            &:focus {
+                outline: none;
+                box-shadow:none;
+                border-color: v.$accent-color;
+              }
+            
+              &.is-invalid {
+                border-color: v.$primary-color;
+              }
+        }
+        
+    }
+    .btn-submit {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: v.$accent-color;
+        color: v.$white-color;
+        border: 1px solid v.$accent-color;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+            color: v.$accent-color;
+            background-color: v.$white-color;
+            border-color: v.$accent-color;
+        }
+        
+        &:active {
+          background-color: #004e94;
+        }
+      }
+     
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .invalid-feedback,
+  .errors-list,
+  .form__resp {
+    font-size: clamp(0.875rem, 2vw, 1.2rem);
+    color: v.$primary-font-color;
+  }
+
+  .invalid-feedback{
+    margin-top: 0.25rem;
+  }
+  
+  .errors-list {
+    margin:0;
+    background:none;
+    border:none;
+  }
+  
+  .form__errors {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .form__resp {
+    margin-top: 1rem;
+    text-align: right;
+  }
+  
+  .form__important {
+    display: none;
+  }
+}
+
+ 
