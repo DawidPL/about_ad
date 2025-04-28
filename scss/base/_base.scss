@@ -1,11 +1,9 @@
 @use "../abstracts/variables" as v;
 
 body{
-    max-width: 135rem;
+    max-width:100%;
     margin-block: 9rem 7rem;
     margin-inline: clamp(1rem, 5vw, 28.5rem);
-    overflow-x: hidden;
-    height: 100dvh;
 }
 
 h1, h2, h3{

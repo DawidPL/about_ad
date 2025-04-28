@@ -254,9 +254,9 @@
 .product-info{
     margin-top:clamp(3rem, 6vw, 10.4rem);
     &__icon{
-        @include m.clamp-t-l(2rem, 1.5vw, 3rem, 25rem, 75vw, 45rem);
+        @include m.clamp-t-l(2rem, 1.5vw, 3rem, 25rem, 10vw, 30rem);
         @include m.media(480px) {
-            @include m.clamp-t-l(4rem, 7vw, 10rem, 20rem, 75vw, 60rem);
+            @include m.clamp-t-l(4rem, 7vw, 10rem, 20rem, 69vw, 45rem);
         }
         @include m.media(768px) {
             @include m.clamp-t-l(2rem, 3.5vw, 4rem, 15rem, 38vw, 60rem);
@@ -373,11 +373,11 @@
     &__image-absolute {
         bottom: clamp(0.75rem, 2vw, 2.5rem);
         right: 0;
-        transform: translateX(40%);
+        
         @include m.media(480px) {
             bottom: 8vw;
             right: 0;
-            transform: translateX(20%);
+            
         }
         img {
           width: clamp(15rem, 30vw, 40rem);
