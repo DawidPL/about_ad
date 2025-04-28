@@ -1,9 +1,38 @@
-.nav{
-    ul{
-        li{
-            a{
-                
-            }
-        }
+@use "../abstracts/variables" as v;
+
+.navbar-custom {
+    background-color: v.$white-color;
+    padding: 5rem 0;
+  
+    &__menu {
+      justify-content: flex-end;
     }
-}
+  
+    &__item {
+      margin-left: 2rem;
+    }
+  
+    &__link {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: v.$accent-color;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+  
+      &:hover {
+        opacity:0.7;
+      }
+    }
+  }
+  
+  // Opcjonalne dostosowanie przycisku hamburgera
+  .navbar-toggler {
+    border: none;
+    &-icon{
+        background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23F38122' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+  
+    &:focus {
+      box-shadow: none;
+    }
+  }

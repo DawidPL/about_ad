@@ -18,17 +18,42 @@
 <body>
 
   <header class="header container">
-      <nav class="header__nav">
-        <a class="header__link active" href="#start">Start</a>
-        <a class="header__link" href="#about">Właściwości</a>
-        <a class="header__link" href="#">Sposob użycia</a>
-        <a class="header__link" href="#">Skład produktu</a>
-        <a class="header__link" href="#contact">Kontakt</a>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container justify-content-end">
+          <button 
+            class="navbar-toggler ms-auto" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarMenu" 
+            aria-controls="navbarMenu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse navbar-custom__menu" id="navbarMenu">
+            <ul class="navbar-nav">
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#home">Start</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#about">O produkcie</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#info">Specyfikacja</a>
+              </li>
+              <li class="navbar-custom__item">
+                <a class="navbar-custom__link" href="#contact">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
   </header>
 
     <main>
-        <section class="slider">
+        <section id="home" class="slider">
             <div class=" position-relative">
                 <img class="slider__image" src="assets/images/slider-top.png" alt="Kobieta na plaży" />
                 <div class="slider__overlay position-absolute d-flex flex-column">
@@ -52,7 +77,7 @@
             </div>
           </section>
 
-          <section class="box container">
+          <section id="about" class="box container">
             <div class="row w-100 m-0 gx-5">
                 <div class="box__image col-12 col-md-6 p-0">
                     <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-image.png" alt="Zdjęcie uśmiechniętej kobiety" />
@@ -122,7 +147,7 @@
             </div>
           </section>
 
-          <section class="product-info container">
+          <section id="info" class="product-info container">
             <div class="row w-100 m-0 gx-5">
                 <div class="product-info__image col-12 col-md-6 p-0">
                     <div class="position-relative">
@@ -187,7 +212,7 @@
                 </div>
             </section>
             
-            <section class="contact container">
+            <section id="contact" class="contact container">
                 <div class="col-12 text-center mb-1 mb-lg-5">
                     <h2 class="contact__title">Kontakt</h2>
                 </div>

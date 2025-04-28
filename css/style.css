@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  max-width: 100%;
-  margin-block: 9rem 7rem;
-  margin-inline: clamp(1rem, 5vw, 28.5rem);
+  width: 100%;
+  max-width: clamp(32rem, 92vw, 140rem);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 2vw, 3rem);
 }
 
 h1, h2, h3 {
@@ -673,10 +674,41 @@ html {
   display: none;
 }
 
+.navbar-custom {
+  background-color: #FFFFFF;
+  padding: 5rem 0;
+}
+.navbar-custom__menu {
+  justify-content: flex-end;
+}
+.navbar-custom__item {
+  margin-left: 2rem;
+}
+.navbar-custom__link {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #F38122;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.navbar-custom__link:hover {
+  opacity: 0.7;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23F38122' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .scroll-to-top {
   position: fixed;
   bottom: 3vh;
-  right: 0;
+  right: clamp(2.2rem, 6vw, 4rem);
   cursor: pointer;
   background-color: #F38122;
   border: 2px solid #F38122;
