@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.details{
+    @include m.media(768px) {
+        margin-top:clamp(3rem, 6vw, 10.4rem);
+    }
+    &__title{
+        @include m.font(2rem, 3vw, 2.8rem, 400);
+        @include m.media(768px) {
+            @include m.font(2rem, 4vw, 6.4rem, 300);
+        }
+    }
+    &__text{
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        }
+    }
+    &__image{
+        max-width:50%;
+        height:auto;
+    }
+    &__image-absolute {
+        bottom: clamp(4rem, 2.5vw, 5rem);
+        right: 0;
+        @include m.media(480px) {
+            bottom: clamp(4rem, 5vw, 8rem);
+        }
+        @include m.media(768px) {
+            bottom: clamp(8rem, 8vw, 10rem);
+        }
+        @include m.media(1024px) {
+            bottom: clamp(10rem, 12vw, 12rem);
+        }
+        @include m.media(1400px) {
+            bottom: clamp(10rem, 10vw, 15rem);
+        }
+
+        img {
+          width: clamp(5rem, 20vw, 10rem);
+          max-width: 100%;
+          height: auto;
+          @include m.media(480px) {
+            width: clamp(10rem, 25vw, 20rem);
+          }
+          @include m.media(768px) {
+            width: clamp(10rem, 20vw, 30rem);
+          }
+            @include m.media(1024px) {
+                width: clamp(10rem, 20vw, 40rem);
+            }
+        }
+      }
+}
