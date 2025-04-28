@@ -166,6 +166,78 @@ html {
 
 .hotspots {
   margin-top: clamp(3rem, 6vw, 10.4rem);
+  position: relative;
+  width: 100%;
+}
+.hotspots__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hotspots__hotspot {
+  position: absolute;
+  width: clamp(3rem, 5vw, 6rem);
+  height: clamp(3rem, 5vw, 6rem);
+  background-color: #FFFFFF;
+  border: clamp(0.4rem, 1.1vw, 1rem) solid #E2E2E2;
+  font-size: clamp(1.2rem, 2vw, 2.4rem);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  font-weight: bold;
+  color: #0F7F25;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotspots__hotspot.active {
+  background-color: #E2E2E2;
+  color: #FFFFFF;
+}
+.hotspots__hotspot-text {
+  position: absolute;
+  max-width: clamp(200px, 40vw, 400px);
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(103, 103, 103, 0.9);
+  transform: translate(-50%, 40%);
+  transition: opacity 0.3s ease, top 0.3s ease, left 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+}
+.hotspots__hotspot-text.active {
+  opacity: 1;
+}
+.hotspots__content {
+  position: relative;
+  z-index: 2;
+}
+.hotspots__arrow {
+  position: absolute;
+  top: -45px;
+  left: 57%;
+  transform: translateX(-50%) rotate(180deg);
+  width: 80px;
+  height: auto;
+  z-index: 1;
+}
+.hotspots__heading {
+  font-size: clamp(1rem, 2vw, 2.8rem);
+  font-weight: 500;
+  color: #0F7F25;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.hotspots__description {
+  line-height: 1.2;
+  font-size: clamp(0.7rem, 1.5vw, 1.8rem);
+  font-weight: 300;
+  color: #000000;
 }
 
 .properties__line {

@@ -1,3 +1,78 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
 .hotspots{
     margin-top:clamp(3rem, 6vw, 10.4rem);
+    position: relative;
+    width: 100%;
+    
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+  
+    &__hotspot {
+        position: absolute;
+        width: clamp(3rem, 5vw, 6rem);
+        height: clamp(3rem, 5vw, 6rem);
+        background-color: v.$white-color;
+        border: clamp(0.4rem, 1.1vw, 1rem) solid v.$hotspot-border-color;
+        font-size: clamp(1.2rem, 2vw, 2.4rem);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 36px;
+        font-weight: bold;
+        color: v.$primary-color;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    &__hotspot.active {
+        background-color: v.$hotspot-border-color;
+        color: v.$white-color;
+    }
+    
+    &__hotspot-text {
+        position: absolute;
+        max-width: clamp(200px, 40vw, 400px);
+        padding: 20px;
+        background: v.$white-color;
+        border: 1px solid v.$white-color;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(103,103,103,0.9);
+        transform: translate(-50%, 40%);
+        transition: opacity 0.3s ease, top 0.3s ease, left 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+        text-align: center;
+        &.active {
+            opacity: 1;
+        }
+    }
+    &__content{
+        position: relative;
+        z-index: 2;
+    }
+    &__arrow{
+        position: absolute;
+        top: -45px;
+        left: 57%;
+        transform: translateX(-50%) rotate(180deg);
+        width: 80px;
+        height: auto;
+        z-index: 1;
+    }
+    &__heading {
+        @include m.font(1rem, 2vw, 2.8rem, 500, v.$primary-font-color);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      
+      &__description {
+        line-height: 1.2;
+        @include m.font(0.7rem, 1.5vw, 1.8rem, 300, v.$secondary-font-color);
+      }
 }
