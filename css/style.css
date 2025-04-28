@@ -29,12 +29,6 @@ html {
   font-size: 62.5%;
 }
 
-/*
-@mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
-    bottom: clamp($bottom-min, $bottom-vw, $bottom-max);
-    left: clamp($left-min, $left-vw, $left-max);
-  }
-*/
 .slider__overlay {
   right: 85rem;
   top: clamp(2rem, 5vw, 7.2rem);
@@ -337,49 +331,49 @@ html {
   height: auto;
 }
 
-.feautures {
+.features {
   margin-top: clamp(3rem, 6vw, 10.7rem);
 }
-.feautures__image {
+.features__image {
   width: clamp(30%, 50vw, 50%);
   height: auto;
 }
 @media (min-width: 768px) {
-  .feautures__image {
+  .features__image {
     width: clamp(60%, 75vw, 100%);
   }
 }
 @media (min-width: 1200px) {
-  .feautures__image {
+  .features__image {
     width: clamp(55%, 75vw, 100%);
   }
 }
-.feautures__title {
+.features__title {
   font-size: clamp(1.5rem, 3vw, 2.8rem);
   font-weight: 500;
   color: #0F7F25;
 }
 @media (min-width: 768px) {
-  .feautures__title {
+  .features__title {
     font-size: clamp(1.2rem, 1.8vw, 2.8rem);
     font-weight: 500;
     color: #0F7F25;
   }
 }
 @media (min-width: 1200px) {
-  .feautures__title {
+  .features__title {
     font-size: clamp(1.2rem, 1.8vw, 2.8rem);
     font-weight: 500;
     color: #0F7F25;
   }
 }
-.feautures__text {
+.features__text {
   font-size: clamp(1.1rem, 1.2vw, 1.8rem);
   font-weight: 300;
   color: #000000;
 }
 @media (min-width: 480px) {
-  .feautures__text {
+  .features__text {
     font-size: clamp(1.3rem, 1.3vw, 2.4rem);
     font-weight: 300;
     color: #000000;

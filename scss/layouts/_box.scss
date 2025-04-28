@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.box{
+    margin:auto;
+    padding:0;
+
+    &__content{
+        margin-top:clamp(1.5rem, 3.2vw, 10rem);
+        padding-left:0;
+        @include m.media(768px){
+            margin-top:clamp(1.5rem, 3.2vw, 10rem);
+            padding-left:clamp(3rem, 6vw, 10rem);
+        }
+    }
+    &__subtitle{
+        width:fit-content;
+        border-radius: 0.7rem;
+        background-color: v.$button-color;
+        margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
+        @include m.clamp-padding(0.2rem, 1vw, 1rem, 
+                                1rem, 1.5vw, 3.9rem,
+                                0.3rem, 0.5vw, 1rem,
+                                0.8rem, 1.5vw, 3.2rem);
+       
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 500, v.$accent-color);
+    }
+    &__text{
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+    }
+}

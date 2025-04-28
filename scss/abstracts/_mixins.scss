@@ -10,12 +10,7 @@
     top: clamp($top-min, $top-vw, $top-max);
     left: clamp($left-min, $left-vw, $left-max);
   }
-/*
-@mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
-    bottom: clamp($bottom-min, $bottom-vw, $bottom-max);
-    left: clamp($left-min, $left-vw, $left-max);
-  }
-*/
+
   @mixin clamp-b-l($bottom-min, $bottom-vw, $bottom-max, $left-min, $left-vw, $left-max) {
     bottom: clamp($bottom-min, calc(#{$bottom-vw}), $bottom-max);
     left: clamp($left-min, calc(#{$left-vw}), $left-max);
