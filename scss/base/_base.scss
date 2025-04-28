@@ -4,6 +4,8 @@ body{
     max-width: 135rem;
     margin-block: 9rem 7rem;
     margin-inline: clamp(1rem, 5vw, 28.5rem);
+    overflow-x: hidden;
+    height: 100dvh;
 }
 
 h1, h2, h3{

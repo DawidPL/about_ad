@@ -307,18 +307,19 @@
 .info-icons{
     margin-top:clamp(3rem, 6vw, 10.4rem);
     &__single{
-        height:clamp(20rem, 30vw, 40rem);;
+        height:clamp(20rem, 30vw, 40rem);
         position:relative;
         @include m.media(768px) {
+            height:clamp(25rem, 30vw, 40rem);
             &::after{
                 content: "";
                 margin-top:2.5rem;
                 margin-bottom:1rem;
                 position: absolute;
                 bottom: 0; 
-                left: 47%; 
+                left: 42%; 
                 transform: translateX(-50%); 
-                width: 88%; 
+                width: 80%; 
                 height: 1.5px; 
                 background-color: v.$border-color;
                 opacity: 0.5;
@@ -342,9 +343,46 @@
         }
     }
     &__text{
+        max-width:88%;
         @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
         @include m.media(480px) {
-            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
         }
     }
+}
+.details{
+    @include m.media(768px) {
+        margin-top:clamp(3rem, 6vw, 10.4rem);
+    }
+    &__title{
+        @include m.font(2rem, 3vw, 2.8rem, 400);
+        @include m.media(768px) {
+            @include m.font(2rem, 4vw, 6.4rem, 300);
+        }
+    }
+    &__text{
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        }
+    }
+    &__image{
+        max-width:50%;
+        height:auto;
+    }
+    &__image-absolute {
+        bottom: clamp(0.75rem, 2vw, 2.5rem);
+        right: 0;
+        transform: translateX(40%);
+        @include m.media(480px) {
+            bottom: 8vw;
+            right: 0;
+            transform: translateX(20%);
+        }
+        img {
+          width: clamp(15rem, 30vw, 40rem);
+          max-width: 100%;
+          height: auto;
+        }
+      }
 }
