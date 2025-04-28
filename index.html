@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <header class="header container">
+  <header class="header">
       <nav class="header__nav">
         <a class="header__link active" href="#start">Start</a>
         <a class="header__link" href="#about">Właściwości</a>
@@ -36,7 +36,7 @@
             </div>  
              
           </section>
-          <section class="heading container">
+          <section class="heading">
             <div class="row w-100">
                 <div class="col-10 mx-auto text-center">
                     <h3 class="heading__subtitle mx-auto">Zdrowa i naturalna opalenizna</h3>
@@ -45,7 +45,7 @@
                 </div>  
             </div>
           </section>
-          <section class="box container">
+          <section class="box">
             <div class="row w-100 m-0 gx-5">
                 <div class="box__image col-12 col-md-6 p-0">
                     <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-image.png" alt="Zdjęcie produktu" />
@@ -57,14 +57,14 @@
                 </div>  
             </div>
           </section>
-          <section class="hotspots container">
+          <section class="hotspots">
             <div class="row w-100">
 
                 <!-- to do -->
 
             </div>
           </section>
-          <section class="heading container">
+          <section class="heading">
             <div class="row w-100 text-center">
                 <h2 class="heading__title mb-5">Ochrona i pielęgnacja. Poznaj moc naturalnych składników.</h2>
             </div>
@@ -94,7 +94,7 @@
             </div>
           </section>
 
-          <section class="feautures container">
+          <section class="feautures">
             <div class="row w-100 justify-content-between text-center">
                 <div class="feautures__single col-12 col-md-4">
                     <img class="feautures__image img-fluid" loading="lazy" src="assets/images/box-1.png" alt="Zdjęcie produktu" />
@@ -113,63 +113,69 @@
                 </div>
             </div>
           </section>
-          <section class="box container">
-            <div class="row w-100">
-                <div class="col-6 position-relative">
-                    <img class="box__image" loading="lazy" src="assets/images/box-4.png" alt="Zdjęcie produktu" />
-                    <div class="box__icon position-absolute">
-                        <img class="box__icon-image" src="assets/icons/ellipse_105.svg" alt="Ikona 1" />
-                        <img class="box__icon-image" src="assets/icons/path_66.svg" alt="Ikona 2" />
-                        <img class="box__icon-image" src="assets/icons/path_67.svg" alt="Ikona 3" />
+
+          <section class="product-info"">
+            <div class="row w-100 m-0 gx-5">
+                <div class="product-info__image col-12 col-md-6 p-0">
+                    <div class="position-relative">
+                        <img class="img-fluid d-block mx-auto" loading="lazy" src="assets/images/box-4.png" alt="Zdjęcie produktu" />
+                        <div class="product-info__icon position-absolute">
+                            <img class="product-info__icon--image" src="assets/icons/teardrop.svg" alt="Ikona 1" />
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <h2 class="box__heading">Sposób użycia</h2>
-                    <p class="box__text">Rozpylić z odległości około 10 cm i wmasować produkt w skórę 30 minut przed ekspozycją na słońce. Stosuj ponownie tak często i w takich ilościach, jak to potrzebne, w szczególności w przypadku długotrwałego przebywania na słońcu, intensywnego pocenia się, po zmoczeniu skóry lub wysuszeniu jej. Filtry przeciwsłoneczne mogą poplamić ubranie.</p>
+                <div class="product-info__content col-12 col-md-6">
+                    <h2 class="product-info__title">Sposób użycia</h2>
+                    <p class="product-info__text">Rozpylić z odległości około 10 cm i wmasować produkt w skórę 30 minut przed ekspozycją na słońce. Stosuj ponownie tak często i w takich ilościach, jak to potrzebne, w szczególności w przypadku długotrwałego przebywania na słońcu, intensywnego pocenia się, po zmoczeniu skóry lub wysuszeniu jej. Filtry przeciwsłoneczne mogą poplamić ubranie.</p>
                 </div>  
             </div>
           </section>
-          <section class=""icons container">
-            <div class="row w-100 justify-content-between text-center">
-                <div class="icons__single col-12 col-md-6 col-lg-3">
-                    <div class="icons__icon">
-                        <img class="icons__image-first" src="assets/icons/group_256.svg" alt="Ikona 1" />
-                        <img class="icons__image-second" src="assets/icons/path_121.svg" alt="Ikona 1" />
+
+          <section class="info-icons">
+            <div class="row w-100 g-0 m-0">
+                <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
+                    <div class="info-icons__icon">
+                        <img class="info-icons__image" src="assets/icons/fire.svg" alt="Ikona 1" />
                     </div>
-                    <h2 class="icons__title">Pojemnik pod ciśnieniem</h2>
-                    <p class="icons__text">Trzymaj z dala od źródeł ciepła, gorących powierzchni, iskry, otwartego ognia lub innych źródeł zapłonu.</p>
+                    <h2 class="info-icons__title my-3 my-md-5">Pojemnik pod <br>ciśnieniem</h2>
+                    <p class="info-icons__text mx-5 mx-md-0">Trzymaj z dala od źródeł ciepła, gorących powierzchni, iskry, otwartego ognia lub innych źródeł zapłonu.</p>
                 </div>
-                <div class="icons__single col-12 col-md-6 col-lg-3">
-                    <div class="icons__icon">
-                        <img class="icons__image-first" src="assets/icons/group_258.svg" alt="Ikona 1" />
-                        <img class="icons__image-second" src="assets/icons/path_102.svg" alt="Ikona 1" />
+                <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
+                    <div class="info-icons__icon">
+                        <img class="info-icons__image" src="assets/icons/weather.svg" alt="Ikona 1" />
                     </div>
-                    <h2 class="icons__title">Chronić przed światłem słonecznym</h2>
-                    <p class="icons__text">Nie wystawiaj pojemnika na działanie temperatur powyżej 50°C/122°F.</p>
+                    <h2 class="info-icons__title my-3 my-md-5">Chronić przed <br>światłem słonecznym</h2>
+                    <p class="info-icons__text mx-5 mx-md-0">Nie wystawiaj pojemnika na działanie temperatur powyżej 50°C/122°F.</p>
                 </div>
-                <div class="icons__single col-12 col-md-6 col-lg-3">
-                    <div class="icons__icon">
-                        <img class="icons__image-first" src="assets/icons/group_223.svg" alt="Ikona 1" />
+                <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
+                    <div class="info-icons__icon">
+                        <img class="info-icons__image" src="assets/icons/eye.svg" alt="Ikona 1" />
                     </div>
-                    <h2 class="icons__title">Bezpieczne stosowanie produktu</h2>
-                    <p class="icons__text">Używając kremu, unikaj okolic oczu. W przypadku kontaktu dokładnie je przemyj.</p>
+                    <h2 class="info-icons__title my-3 my-md-5">Bezpieczne <br>stosowanie produktu</h2>
+                    <p class="info-icons__text mx-5 mx-md-0">Używając kremu, unikaj okolic oczu. W przypadku kontaktu dokładnie je przemyj.</p>
                 </div>
-                <div class="icons__single col-12 col-md-6 col-lg-3">
-                    <div class="icons__icon">
-                        <img class="icons__image-first" loading="lazy" src="assets/icons/group_259.svg" alt="Ikona 1" />
-                        <img class="icons__image-second" loading="lazy" src="assets/icons/line_32.svg" alt="Ikona 1" />
+                <div class="info-icons__single col-12 col-md-6 col-lg-3 text-center text-md-start">
+                    <div class="info-icons__icon">
+                        <img class="info-icons__image" loading="lazy" src="assets/icons/face.svg" alt="Ikona 1" />
                     </div>
-                    <h2 class="icons__title">Chronić przed dziećmi</h2>
-                    <p class="icons__text">Trzymaj produkt z dala od dzieci.</p>
+                    <h2 class="info-icons__title my-3 my-md-5">Chronić przed <br>dziećmi</h2>
+                    <p class="info-icons__text mx-5 mx-md-0">Trzymaj produkt z dala od dzieci.</p>
                 </div>
             </div>
             </section>
-            <section class="bottom container">
-                <div class="row w-100 text-center">
+            <section class="details">
+                <div class="row w-100 g-0 m-0 text-center">
                     <div class="col-12 justify-content-center text-center">
-                        <h2 class="bottom__title">Skład produktu</h2>
-                        <p class="bottom__text">Aqua (Water), Aloe Barbadensis Leaf Juice, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Butyl Methoxydibenzoylmethane (Avobenzone), Shea Butter Ethyl Esters, Diethylamino Hydroxybenzoyl Hexyl Benzoale, Arginine, Ethylhexyl Triazone, Glycerin, PolyglyceryI-3 Cocoate, Polyester-7, Bis- Ethylhexyloxyphenol Metnoxypnenyl Triazine (Bemotrizinol), Neopentyl Glycol Diheptanoate, PolyglyceryI-6 Stearate, Glyceryl Stearate Citrate, Phenoxyethanol, Potassium Cetyl Phosphate, Magnesium Aluminum Silicate, Diisopropyl Sebacate, Parfum (Fragrance), Cocos Nucifera Oil (Cocos Nucifera (Coconut) Oil), Argania Spinosa Kernel Oil, Tocopheryl Acetate, Ethylhexylglycerin, Polyglyceryl-6 Behenate, Citric Acid.</p>
+                        <h2 class="details__title mb-5">Skład produktu</h2>
+                        <p class="details__text">Aqua (Water), Aloe Barbadensis Leaf Juice, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Butyl Methoxydibenzoylmethane (Avobenzone), Shea Butter Ethyl Esters, Diethylamino Hydroxybenzoyl Hexyl Benzoale, Arginine, Ethylhexyl Triazone, Glycerin, PolyglyceryI-3 Cocoate, Polyester-7, Bis- Ethylhexyloxyphenol Metnoxypnenyl Triazine (Bemotrizinol), Neopentyl Glycol Diheptanoate, PolyglyceryI-6 Stearate, Glyceryl Stearate Citrate, Phenoxyethanol, Potassium Cetyl Phosphate, Magnesium Aluminum Silicate, Diisopropyl Sebacate, Parfum (Fragrance), Cocos Nucifera Oil (Cocos Nucifera (Coconut) Oil), Argania Spinosa Kernel Oil, Tocopheryl Acetate, Ethylhexylglycerin, Polyglyceryl-6 Behenate, Citric Acid.</p>
                     </div>
-                   
+                    <div class="col-12 position-relative">
+                        <img class="details__image" src="assets/images/bottom-logo.png" alt="główna grafika" />
+                        <div class="details__image-absolute position-absolute">
+                            <img class="details__image-absolute-img" src="assets/images/hand.png" alt="główna grafika" />
+                        </div>
+                    </div>
+                </div>
             </section>
 
             

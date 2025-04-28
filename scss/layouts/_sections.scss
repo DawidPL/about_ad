@@ -74,7 +74,7 @@
     }
     &__text{
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
-        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color);
     }
 }
 
@@ -104,7 +104,7 @@
     }
     &__text{
         margin-bottom:clamp(3rem, 6vw, 10.1rem);
-        @include m.font(1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
     }
 }
 .properties{
@@ -246,5 +246,143 @@
     }
     &__text{
         @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        }
     }
+}
+.product-info{
+    margin-top:clamp(3rem, 6vw, 10.4rem);
+    &__icon{
+        @include m.clamp-t-l(2rem, 1.5vw, 3rem, 25rem, 75vw, 45rem);
+        @include m.media(480px) {
+            @include m.clamp-t-l(4rem, 7vw, 10rem, 20rem, 75vw, 60rem);
+        }
+        @include m.media(768px) {
+            @include m.clamp-t-l(2rem, 3.5vw, 4rem, 15rem, 38vw, 60rem);
+        }
+       &--image{
+        aspect-ratio: 1 / 1;
+        width: clamp(7rem, 10vw, 18rem);
+        @include m.media(480px) {
+            width: clamp(10rem, 15vw, 20rem);
+        }
+        @include m.media(768px) {
+            width: clamp(10rem, 10vw, 18rem);
+        }
+       }
+    }
+
+    &__content{
+        margin-top:clamp(0.5rem, 1vw, 2rem);
+        max-width: 480px;
+        padding-left:0;
+        @include m.media(480px) {
+            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        }
+        @include m.media(768px){
+            margin-top:clamp(1.5rem, 3.2vw, 10rem);
+            padding-left:clamp(5rem, 10vw, 15rem);
+        }
+        @include m.media(1200px){
+            margin-top:clamp(5rem, 5.2vw, 20rem);
+            padding-left:clamp(5rem, 10vw, 15rem);
+        }
+    }
+    &__title{
+        margin-top:clamp(1rem, 2.5vw, 5rem);
+        @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        @include m.media(480px) {
+            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        }
+    }
+    &__text{
+        margin-bottom:clamp(3rem, 6vw, 10.1rem);
+        @include m.font(1.1rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.3vw, 2.4rem, 300, v.$secondary-font-color); 
+        }
+    }
+}
+.info-icons{
+    margin-top:clamp(3rem, 6vw, 10.4rem);
+    &__single{
+        height:clamp(20rem, 30vw, 40rem);
+        position:relative;
+        @include m.media(768px) {
+            height:clamp(25rem, 30vw, 40rem);
+            &::after{
+                content: "";
+                margin-top:2.5rem;
+                margin-bottom:1rem;
+                position: absolute;
+                bottom: 0; 
+                left: 42%; 
+                transform: translateX(-50%); 
+                width: 80%; 
+                height: 1.5px; 
+                background-color: v.$border-color;
+                opacity: 0.5;
+
+            }
+        }
+    }
+    &__image{
+        aspect-ratio: 1 / 1;
+        width: clamp(6rem, 10vw, 10rem);
+    }
+    &__title{
+        min-height: 1rem;
+        @include m.font(1.2rem, 3vw, 2.8rem, 500);
+        @include m.media(768px) {
+            min-height: 4rem;
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+        @include m.media(1200px) {
+            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
+        }
+    }
+    &__text{
+        max-width:88%;
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        }
+    }
+}
+.details{
+    @include m.media(768px) {
+        margin-top:clamp(3rem, 6vw, 10.4rem);
+    }
+    &__title{
+        @include m.font(2rem, 3vw, 2.8rem, 400);
+        @include m.media(768px) {
+            @include m.font(2rem, 4vw, 6.4rem, 300);
+        }
+    }
+    &__text{
+        @include m.font(1.1rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        @include m.media(480px) {
+            @include m.font(1.3rem, 1.2vw, 1.8rem, 300, v.$secondary-font-color); 
+        }
+    }
+    &__image{
+        max-width:50%;
+        height:auto;
+    }
+    &__image-absolute {
+        bottom: clamp(0.75rem, 2vw, 2.5rem);
+        right: 0;
+        transform: translateX(40%);
+        @include m.media(480px) {
+            bottom: 8vw;
+            right: 0;
+            transform: translateX(20%);
+        }
+        img {
+          width: clamp(15rem, 30vw, 40rem);
+          max-width: 100%;
+          height: auto;
+        }
+      }
 }
