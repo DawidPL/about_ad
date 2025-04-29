@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .slider-middle{
-    margin-top:clamp(3rem, 6vw, 10.4rem);
+    @include m.section-margin();
     &__overlay{
         right: clamp(10rem, 5vw, 30rem);
         @include m.clamp-t-l(4rem, 12vw, 16.2rem, 1.8rem, 4.5vw, 6.9rem);

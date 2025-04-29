@@ -3,7 +3,7 @@
 
 .details{
     @include m.media(768px) {
-        margin-top:clamp(3rem, 6vw, 10.4rem);
+        @include m.section-margin();
     }
     &__title{
         @include m.font(2rem, 3vw, 2.8rem, 400);
