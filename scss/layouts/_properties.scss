@@ -24,32 +24,32 @@
         }
     }
     &__extra{
-        @include m.font(1rem, 3vw, 5rem, 500, v.$primary-font-color);
+        @include m.font(1rem, 3vw, 5rem, 500);
         span:first-child{
-            @include m.font(4rem, 14vw, 20rem, 300, v.$primary-font-color);
+            @include m.font(4rem, 14vw, 20rem, 300);
         }
         span:last-child{
-            @include m.font(1rem, 7vw, 15rem, 300, v.$primary-font-color);
+            @include m.font(1rem, 7vw, 15rem, 300);
         }
         @include m.media(480px){
-            @include m.font(1rem, 3vw, 5rem, 500, v.$primary-font-color);
+            @include m.font(1rem, 3vw, 5rem, 500);
             span:first-child{
-                @include m.font(4rem, 18vw, 23rem, 300, v.$primary-font-color);
+                @include m.font(4rem, 18vw, 23rem, 300);
             }
             span:last-child{
-                @include m.font(1rem, 10vw, 20rem, 300, v.$primary-font-color);
+                @include m.font(1rem, 10vw, 20rem, 300);
             }
         }
     }
     &__subtitle{
         line-height: 1;
         @include m.clamp-b-l(-2rem, -6vw, -3rem, 0.5rem, 2vw, 4rem);
-        @include m.font(0.7rem, 1.8vw, 2.8rem, 600, v.$primary-font-color);
+        @include m.font(0.7rem, 1.8vw, 2.8rem, 600);
         @include m.media(480px){
             line-height: 1.4;
             margin-top:clamp(1.5rem, 1.2vw, 2.5rem);
             @include m.clamp-b-l(-8rem, -5vw, -3rem, 2.5rem, 3vw, 5rem);
-            @include m.font(1rem, 1.8vw, 2.8rem, 600, v.$primary-font-color);
+            @include m.font(1rem, 1.8vw, 2.8rem, 600);
         }        
     }
     &__box{
@@ -89,7 +89,7 @@
         }
     }
     &__title{
-        @include m.font(0.8rem, 2vw, 3.4rem, 400, v.$primary-font-color);
+        @include m.font(0.8rem, 2vw, 3.4rem, 400);
         margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
     }
     &__text{

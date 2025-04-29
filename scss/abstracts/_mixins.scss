@@ -1,5 +1,9 @@
 @use "variables" as v;
 
+@mixin section-margin($min: 3rem, $preferred: 6vw, $max: 10.7rem) {
+    margin-top:clamp($min, $preferred, $max);
+}
+
 @mixin font($min, $preferred, $max, $weight, $color: v.$primary-font-color) {
     font-size: clamp($min, $preferred, $max);
     font-weight: $weight;

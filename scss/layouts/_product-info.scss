@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .product-info{
-    margin-top:clamp(3rem, 6vw, 10.4rem);
+    @include m.section-margin();
     &__icon{
         @include m.clamp-t-l(2rem, 1.5vw, 3rem, 25rem, 10vw, 30rem);
         @include m.media(480px) {
@@ -25,25 +25,24 @@
 
     &__content{
         margin-top:clamp(0.5rem, 1vw, 2rem);
-        //max-width: 480px;
         padding-right:clamp(1rem, 10vw, 15rem);
         padding-left:0;
         @include m.media(480px) {
-            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+            @include m.font(2rem, 2.5vw, 6.2rem, 400);
         }
         @include m.media(768px){
             margin-top:clamp(1.5rem, 3.2vw, 10rem);
             padding-left:clamp(5rem, 10vw, 15rem);
         }
         @include m.media(1200px){
-            margin-top:clamp(5rem, 5.2vw, 20rem);
+            margin-top:clamp(5rem, 5.2vw, 10rem);
         }
     }
     &__title{
         margin-top:clamp(1rem, 2.5vw, 5rem);
-        @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+        @include m.font(2rem, 2.5vw, 6.2rem, 400);
         @include m.media(480px) {
-            @include m.font(2rem, 2.5vw, 6.2rem, 400, v.$primary-font-color);
+            @include m.font(2rem, 2.5vw, 6.2rem, 400);
         }
     }
     &__text{

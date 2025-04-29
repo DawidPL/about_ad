@@ -30,19 +30,18 @@
             @include m.clamp-b-l(-2rem, 5vw, -5rem, 3.5rem, 2vw, 3rem);
             @include m.media(480px) {
                 width: clamp(2rem, 37vw, 50rem);
-                @include m.clamp-b-l(-3rem, 5vw, -5rem, 4.2rem, 8vw, 20rem);
+                @include m.clamp-b-l(-3rem, 5vw, -5rem, 4.2rem, 8vw, 8rem);
             }
             @include m.media(768px) {
                 width: clamp(10rem, 34.5vw, 50rem);
-                @include m.clamp-b-l(-4.5rem, 10vw, -12rem, 7rem, 10vw, 20rem);
+                @include m.clamp-b-l(-4.5rem, 10vw, -12rem, 7rem, 10vw, 10rem);
             }
             @include m.media(1024px) {
                 width: clamp(17rem, 35vw, 54rem);
-                @include m.clamp-b-l(-5rem, 3vw, -6.5rem, 2rem, 10vw, 30rem);
+                @include m.clamp-b-l(-5rem, 3vw, -6.5rem, 10rem, 10vw, 12rem);
             }
             @include m.media(1200px) {
-                width: clamp(17rem, 35vw, 54rem);
-                @include m.clamp-b-l(-7rem, 5vw, -7.5rem, 2rem, 10vw, 40rem);
+                @include m.clamp-b-l(-7rem, 5vw, -7.5rem, 12rem, 10vw, 14rem);
             }
         }
     }
