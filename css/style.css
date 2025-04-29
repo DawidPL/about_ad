@@ -328,48 +328,64 @@ html {
   margin-top: clamp(1.5rem, 3.2vw, 5.8rem);
   top: 0;
   right: clamp(1.5rem, 2vw, 3rem);
-  width: clamp(13rem, 15vw, 20rem);
+  width: clamp(10rem, 15vw, 12rem);
   height: clamp(12rem, 38vw, 20rem);
-  padding: clamp(1.2rem, 2vw, 3rem);
+  padding: clamp(2.2rem, 2vw, 3rem);
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1.5rem;
 }
 @media (min-width: 480px) {
   .properties__box {
-    padding: clamp(2rem, 1vw, 4rem);
+    padding: clamp(3rem, 1.3vw, 4rem);
     right: clamp(1.7rem, 2.2vw, 3.5rem);
-    width: clamp(10rem, 30vw, 30rem);
-    height: clamp(4rem, 35vw, 20rem);
+    width: clamp(10rem, 28vw, 20rem);
+    height: clamp(4rem, 39vw, 23rem);
   }
 }
 @media (min-width: 768px) {
   .properties__box {
-    width: clamp(10rem, 34vw, 40rem);
-    height: clamp(10rem, 34vw, 45rem);
+    padding: clamp(2.8rem, 6vw, 5rem);
+    width: clamp(10rem, 30vw, 25rem);
+    height: clamp(30rem, 33vw, 40rem);
+  }
+}
+@media (min-width: 1024px) {
+  .properties__box {
+    padding: clamp(3rem, 5vw, 5rem);
+    width: clamp(10rem, 31vw, 35rem);
+    height: clamp(20rem, 40vw, 40rem);
+  }
+}
+@media (min-width: 1200px) {
+  .properties__box {
+    padding: clamp(3.2rem, 5vw, 5rem);
+    width: clamp(10rem, 34vw, 38rem);
+    height: clamp(20rem, 34vw, 50rem);
   }
 }
 @media (min-width: 1400px) {
   .properties__box {
+    padding: clamp(4rem, 15vw, 6rem);
     width: clamp(20rem, 34vw, 50rem);
     height: clamp(20rem, 34vw, 50rem);
   }
 }
 .properties__title {
-  font-size: clamp(1rem, 2vw, 3.4rem);
+  font-size: clamp(0.8rem, 2vw, 3.4rem);
   font-weight: 400;
   color: #0F7F25;
   margin-bottom: clamp(0.2rem, 1vw, 2.2rem);
 }
 .properties__text {
   line-height: 1.2;
-  font-size: clamp(0.6rem, 1vw, 1.5rem);
+  font-size: clamp(0.4rem, 0.6vw, 1rem);
   font-weight: 300;
   color: #000000;
   margin-bottom: clamp(3rem, 6vw, 10.1rem);
 }
 @media (min-width: 480px) {
   .properties__text {
-    font-size: clamp(0.7rem, 1.5vw, 2.5rem);
+    font-size: clamp(0.6rem, 0.7vw, 1.2rem);
     font-weight: 300;
     color: #000000;
     margin-bottom: clamp(3rem, 6vw, 10.1rem);
@@ -377,8 +393,24 @@ html {
 }
 @media (min-width: 768px) {
   .properties__text {
-    line-height: 1.4;
-    font-size: clamp(1.5rem, 1.1vw, 2.5rem);
+    line-height: 1.3;
+    font-size: clamp(1rem, 1vw, 2.5rem);
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: clamp(3rem, 6vw, 3rem);
+  }
+}
+@media (min-width: 1024px) {
+  .properties__text {
+    font-size: clamp(1.3rem, 1vw, 3rem);
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: clamp(3rem, 6vw, 3rem);
+  }
+}
+@media (min-width: 1200px) {
+  .properties__text {
+    font-size: clamp(1.6rem, 1vw, 3rem);
     font-weight: 300;
     color: #000000;
     margin-bottom: clamp(3rem, 6vw, 3rem);
