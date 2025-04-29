@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .info-icons{
-    margin-top:clamp(3rem, 6vw, 10.4rem);
+    @include m.section-margin();
     &__single{
         height:clamp(20rem, 30vw, 40rem);
         position:relative;
@@ -30,9 +30,6 @@
         @include m.font(1.2rem, 3vw, 2.8rem, 500);
         @include m.media(768px) {
             min-height: 4rem;
-            @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
-        }
-        @include m.media(1200px) {
             @include m.font(1.2rem, 1.8vw, 2.8rem, 500);
         }
     }

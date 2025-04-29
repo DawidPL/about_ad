@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .hotspots{
-    margin-top:clamp(3rem, 6vw, 10.4rem);
+    @include m.section-margin();
     position: relative;
     width: 100%;
     
@@ -69,7 +69,7 @@
         z-index: 1;
     }
     &__heading {
-        @include m.font(1rem, 2vw, 2.8rem, 500, v.$primary-font-color);
+        @include m.font(1rem, 2vw, 2.8rem, 500);
         margin-bottom: 10px;
         text-transform: uppercase;
       }

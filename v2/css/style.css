@@ -68,33 +68,32 @@ html {
   .slider__image--two {
     width: clamp(2rem, 37vw, 50rem);
     bottom: clamp(-3rem, 5vw, -5rem);
-    left: clamp(4.2rem, 8vw, 20rem);
+    left: clamp(4.2rem, 8vw, 8rem);
   }
 }
 @media (min-width: 768px) {
   .slider__image--two {
     width: clamp(10rem, 34.5vw, 50rem);
     bottom: clamp(-4.5rem, 10vw, -12rem);
-    left: clamp(7rem, 10vw, 20rem);
+    left: clamp(7rem, 10vw, 10rem);
   }
 }
 @media (min-width: 1024px) {
   .slider__image--two {
     width: clamp(17rem, 35vw, 54rem);
     bottom: clamp(-5rem, 3vw, -6.5rem);
-    left: clamp(2rem, 10vw, 30rem);
+    left: clamp(10rem, 10vw, 12rem);
   }
 }
 @media (min-width: 1200px) {
   .slider__image--two {
-    width: clamp(17rem, 35vw, 54rem);
     bottom: clamp(-7rem, 5vw, -7.5rem);
-    left: clamp(2rem, 10vw, 40rem);
+    left: clamp(12rem, 10vw, 14rem);
   }
 }
 
 .heading {
-  margin-top: clamp(2rem, 10vw, 5rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
 }
 .heading__title {
   margin-bottom: clamp(0.2rem, 1vw, 2.2rem);
@@ -133,12 +132,8 @@ html {
   margin-top: clamp(5rem, 10vw, 16.6rem);
 }
 
-.box {
-  margin: auto;
-  padding: 0;
-}
 .box__content {
-  margin-top: clamp(1.5rem, 3.2vw, 10rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
   padding-left: 0;
 }
 @media (min-width: 768px) {
@@ -168,7 +163,7 @@ html {
 }
 
 .hotspots {
-  margin-top: clamp(3rem, 6vw, 10.4rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
   position: relative;
   width: 100%;
 }
@@ -427,7 +422,7 @@ html {
 }
 
 .slider-middle {
-  margin-top: clamp(3rem, 6vw, 10.4rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
 }
 .slider-middle__overlay {
   right: clamp(10rem, 5vw, 30rem);
@@ -473,36 +468,16 @@ html {
 }
 .features__image {
   width: clamp(30%, 50vw, 50%);
-  height: auto;
 }
 @media (min-width: 768px) {
   .features__image {
-    width: clamp(60%, 75vw, 100%);
-  }
-}
-@media (min-width: 1200px) {
-  .features__image {
-    width: clamp(55%, 75vw, 100%);
+    width: clamp(60%, 50vw, 100%);
   }
 }
 .features__title {
-  font-size: clamp(1.5rem, 3vw, 2.8rem);
+  font-size: clamp(1.5rem, 2vw, 2.8rem);
   font-weight: 500;
   color: #0F7F25;
-}
-@media (min-width: 768px) {
-  .features__title {
-    font-size: clamp(1.2rem, 1.8vw, 2.8rem);
-    font-weight: 500;
-    color: #0F7F25;
-  }
-}
-@media (min-width: 1200px) {
-  .features__title {
-    font-size: clamp(1.2rem, 1.8vw, 2.8rem);
-    font-weight: 500;
-    color: #0F7F25;
-  }
 }
 .features__text {
   font-size: clamp(1.1rem, 1.2vw, 1.8rem);
@@ -518,7 +493,7 @@ html {
 }
 
 .product-info {
-  margin-top: clamp(3rem, 6vw, 10.4rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
 }
 .product-info__icon {
   top: clamp(2rem, 1.5vw, 3rem);
@@ -570,7 +545,7 @@ html {
 }
 @media (min-width: 1200px) {
   .product-info__content {
-    margin-top: clamp(5rem, 5.2vw, 20rem);
+    margin-top: clamp(5rem, 5.2vw, 10rem);
   }
 }
 .product-info__title {
@@ -601,7 +576,7 @@ html {
 }
 
 .info-icons {
-  margin-top: clamp(3rem, 6vw, 10.4rem);
+  margin-top: clamp(3rem, 6vw, 10.7rem);
 }
 .info-icons__single {
   height: clamp(20rem, 30vw, 40rem);
@@ -641,13 +616,6 @@ html {
     color: #0F7F25;
   }
 }
-@media (min-width: 1200px) {
-  .info-icons__title {
-    font-size: clamp(1.2rem, 1.8vw, 2.8rem);
-    font-weight: 500;
-    color: #0F7F25;
-  }
-}
 .info-icons__text {
   max-width: 88%;
   font-size: clamp(1.1rem, 1.2vw, 1.8rem);
@@ -664,7 +632,7 @@ html {
 
 @media (min-width: 768px) {
   .details {
-    margin-top: clamp(3rem, 6vw, 10.4rem);
+    margin-top: clamp(3rem, 6vw, 10.7rem);
   }
 }
 .details__title {
