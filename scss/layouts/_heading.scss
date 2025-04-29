@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .heading{
-    margin-top:clamp(2rem, 10vw, 5rem);
+    @include m.section-margin();
     &__title{
         margin-bottom:clamp(0.2rem, 1vw, 2.2rem);
         margin-top:1.6rem;

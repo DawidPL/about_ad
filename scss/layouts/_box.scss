@@ -2,11 +2,8 @@
 @use "../abstracts/mixins" as m;
 
 .box{
-    margin:auto;
-    padding:0;
-
     &__content{
-        margin-top:clamp(1.5rem, 3.2vw, 10rem);
+        @include m.section-margin;
         padding-left:0;
         @include m.media(768px){
             margin-top:clamp(1.5rem, 3.2vw, 10rem);
